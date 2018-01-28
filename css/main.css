@@ -96,20 +96,84 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+main{
+	font-family: 'Source Sans Pro', sans-serif;
+}
 
 .flex{
 	display: flex;
 }
+ .margin-right{
+	 margin-right: auto;
+ }
 
+@media (max-width: 767px) {
+	.hide-small{
+		display: none;
+	}
+}
 
+@media (min-width: 768px) {
+	.hide-medium{
+		display: none;
+	}
+}
 
+.animate-right{
+	position:relative;
+	animation:animateright .4s;
+	padding-left: 0 !important;
+	background-color: white;
+}
 
+@keyframes animateright{
+	from{right:-300px;opacity:0}
+	to{right:0;opacity:1}
+}
 
+.navLarge{
+	border: 1px solid grey;
+	height: 100px;
+}
 
+.main-nav li{
+	padding: 15px 25px;
+	list-style-type: none;
+}
 
+.ul-large{
+	margin-right: 70px;
+	font-size: 18px;
+}
 
+.navLarge img{
+	width: 100px;
+	margin-left: 70px;
+}
 
+.mySidebar{
+	display: none;
+}
 
+.logo-small img{
+	width: 60px;
+	margin: 25px;
+}
+
+.nav-small .button{
+	color: grey;
+	border: none;
+	background-color: transparent;
+	width: 100px;
+	height: 100px;
+	font-size: 40px;
+	float: right;
+}
+
+header{
+	background-color: lightgrey;
+	height: 100vh;
+}
 
 /* ==========================================================================
    Helper classes

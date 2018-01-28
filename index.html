@@ -13,8 +13,9 @@
 				<link rel="icon" href="favicon.ico">
         <!-- Place favicon.ico in the root directory -->
 
+
+				<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
-				<link rel="stylesheet" href="css/w3.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -22,6 +23,75 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
+				<main>
+
+					<header>
+
+					<nav class="main-nav">
+
+						<div class="flex hide-medium nav-small">
+
+							<!-- div to close sidebar -->
+							<div onclick="closeNav()" class="mySidebar"></div>
+
+
+							<div class="logo-small margin-right">
+							  <a href="">
+							    <img class="" src="img/logo-gris.png" alt="Logo Thierry Van-hecke">
+							  </a>
+							</div>
+
+							<!-- start main mobile navigation -->
+							<div class="flex">
+
+							    <ul class="mySidebar animate-right">
+							      <li onclick="closeNav()" class="">
+							        Close
+							      </li>
+							      <li>
+							        <a href="" class="">Mes réalisations</a>
+							      </li>
+							      <li>
+							        <a href="" class="">A propos</a>
+							      </li>
+							      <li>
+							        <a href="" class="">Contact</a>
+							      </li>
+							    </ul>
+
+							  <button class="button" onclick="openNav()">&#9776;</button>
+
+							</div>
+
+						</div>
+
+						<!-- start main desktop navigation -->
+						<div class="hide-small flex navLarge">
+
+							<div class="margin-right">
+							  <a href="" class="flex">
+							    <img class="" src="img/logo-gris.png" alt="Logo Thierry Van-hecke">
+							  </a>
+							</div>
+
+						  <ul class="flex ul-large">
+						    <li class=""><a href="">Mes réalisations</a></li>
+						    <li class=""><a href="">A propos</a></li>
+						    <li class=""><a href="">Contact</a></li>
+						  </ul>
+
+						</div>
+
+
+					</nav>
+
+				</header>
+
+				</main>
+
+
+
+				<!-- <h2>Parlons un peu de moi</h2> -->
 
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
