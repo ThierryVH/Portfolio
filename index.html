@@ -14,9 +14,18 @@
         <!-- Place favicon.ico in the root directory -->
 
 
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+
 				<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+				<script src="js/typed.js"></script>
+					<script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
+
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -27,78 +36,93 @@
 
 					<header>
 
-					<nav class="main-nav">
+						<nav class="main-nav">
 
-						<div class="flex hide-medium nav-small">
+							<div class="nav-small hide-medium flex">
 
-							<!-- div to close sidebar -->
-							<div onclick="closeNav()" class="mySidebar"></div>
+								<a href="">
+									<img src="img/logo-gris.png" alt="" class="logo-small margin-right">
+								</a>
 
 
-							<div class="logo-small margin-right">
-							  <a href="">
-							    <img class="" src="img/logo-gris.png" alt="Logo Thierry Van-hecke">
-							  </a>
-							</div>
+								<button id="button" class="button-open" onclick="openNav()">&#9776;</button>
 
-							<!-- start main mobile navigation -->
-							<div class="flex">
-
-							    <ul class="mySidebar animate-right">
-							      <li onclick="closeNav()" class="">
-							        Close
-							      </li>
-							      <li>
-							        <a href="" class="">Mes réalisations</a>
-							      </li>
-							      <li>
-							        <a href="" class="">A propos</a>
-							      </li>
-							      <li>
-							        <a href="" class="">Contact</a>
-							      </li>
-							    </ul>
-
-							  <button class="button" onclick="openNav()">&#9776;</button>
+								<div class="div-animate flex">
+									<div class="mySidebar div-close" onclick="closeNav()"></div>
+									<ul class="animate-right mySidebar">
+									  <li onclick="closeNav()" class="li-close">Fermer <span>&times;</span></li>
+									  <li class="mySidenar"><a href="#">Mes réalisations</a></li>
+									  <li class="mySidenar"><a href="#">À propos</a></li>
+									  <li class="mySidenar"><a href="#">Contactez-moi</a></li>
+									</ul>
+								</div>
 
 							</div>
 
+							<div class="nav-medium hide-small flex">
+
+								<a class="margin-right" href="">
+									<img src="img/logo-gris.png" alt="" class="logo-medium ">
+								</a>
+
+								<ul class="flex">
+									<li class="flex"><a href="#">Portfolio</a></li>
+									<li class="flex"><a href="#">À propos</a></li>
+									<li class="flex"><a href="#">Contact</a></li>
+								</ul>
+
+							</div>
+
+						</nav>
+
+
+						<h1>Hey ! Moi c'est Thierry,</h1>
+						<h2><span id="typed"></span><span class="typed-cursor" style="animation-iteration-count: infinite;">|</span></h2>
+
+
+						<div class="div-fleche">
+							<a href="#portfolio">
+								<img src="img/fleche-bas.png" alt="">
+							</a>
 						</div>
 
-						<!-- start main desktop navigation -->
-						<div class="hide-small flex navLarge">
+					</header>
 
-							<div class="margin-right">
-							  <a href="" class="flex">
-							    <img class="" src="img/logo-gris.png" alt="Logo Thierry Van-hecke">
-							  </a>
-							</div>
+					<section>
+						<h3 id="portfolio">Mes réalisations</h3>
+					</section>
 
-						  <ul class="flex ul-large">
-						    <li class=""><a href="">Mes réalisations</a></li>
-						    <li class=""><a href="">A propos</a></li>
-						    <li class=""><a href="">Contact</a></li>
-						  </ul>
+					<section>
+						<h3>Parlons un peu de moi</h3>
+					</section>
 
+					<section>
+						<h3>Contactez-moi</h3>
+
+						<div class="contact-form">
+							<form class="flex" action="index.html" method="post">
+								<label for="">Nom & Prénom</label>
+								<input type="text" name="nom" value="">
+								<label for="">E-mail</label>
+								<input type="email" name="email" value="">
+								<label for="">Téléphone</label>
+								<input type="tel" name="telephone" value="">
+								<label for="">Message</label>
+								<input type="textarea" name="message" value="">
+								<input type="submit" name="contact" value="Envoyer">
+							</form>
 						</div>
-
-
-					</nav>
-
-				</header>
+					</section>
 
 				</main>
 
 
 
-				<!-- <h2>Parlons un peu de moi</h2> -->
-
-
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+				<script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
