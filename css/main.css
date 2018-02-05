@@ -109,6 +109,8 @@ header{
 	height: 100vh;
 	background-image: url('../img/fond3.png');
 	background-size: cover;
+	min-height: 450px;
+	position: relative;
 }
 
 h1, h2{
@@ -278,14 +280,6 @@ li:active{
 	padding: 20px 40px;
 }
 
-.nav-medium li{
-	font-size: 22px;
-}
-
-.nav-medium li a{
-	padding: 20px 30px;
-}
-
 .li-close, .asterisque{
 	color: #ed1452;
 }
@@ -331,7 +325,7 @@ li:active{
 }
 
 .contact-form{
-	padding: 20px;
+	padding: 10%;
 }
 
 .contact-form input, .contact-form textarea{
@@ -339,11 +333,11 @@ li:active{
 	border-radius: 5px;
 	margin: 5px 0 10px;
 	padding-left: 15px;
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .contact-form input{
-	height: 50px;
+	height: 40px;
 }
 
 .contact-form input::placeholder, textarea::placeholder{
@@ -397,8 +391,20 @@ h3 span{
 
 
 @media (min-width: 768px) {
+	.nav-medium li{
+		font-size: 22px;
+	}
+
+	.nav-medium li a{
+		padding: 20px 30px;
+	}
+
 	.hide-medium{
 		display: none;
+	}
+
+	header{
+		min-height: 550px;
 	}
 
 	h1{
@@ -428,7 +434,7 @@ h3 span{
 		border-radius: 5px;
 		margin: 5px 0 10px;
 		padding-left: 15px;
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	.contact-form input{
@@ -438,6 +444,10 @@ h3 span{
 
 
 @media (min-width: 992px) {
+
+	header{
+		min-height: 650px;
+	}
 
 	h1{
 		margin-top: 25vh;
