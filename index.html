@@ -76,7 +76,7 @@
 						</nav>
 
 
-						<h1>Hey ! Moi c'est Thierry,</h1>
+						<h1>Hey ! <br class="hide-medium">Moi c'est Thierry,</h1>
 						<h2><span id="typed"></span><span class="typed-cursor" style="animation-iteration-count: infinite;">|</span></h2>
 
 
@@ -89,26 +89,27 @@
 					</header>
 
 					<section>
-						<h3 id="portfolio">Mes réalisations</h3>
+						<h3 id="portfolio"><span>Mes réalisations</span></h3>
 					</section>
 
 					<section>
-						<h3>Parlons un peu de moi</h3>
+						<h3><span>Parlons un peu de moi</span></h3>
 					</section>
 
 					<section>
-						<h3>Contactez-moi</h3>
+						<h3><span>Contactez-moi</span></h3>
 
 						<div class="contact-form">
-							<form class="flex" action="index.html" method="post">
-								<label for="">Nom & Prénom</label>
-								<input type="text" name="nom" value="">
-								<label for="">E-mail</label>
-								<input type="email" name="email" value="">
-								<label for="">Téléphone</label>
-								<input type="tel" name="telephone" value="">
-								<label for="">Message</label>
-								<input type="textarea" name="message" value="">
+							<form class="flex" action="index.html" method="post" id="contact-form">
+								<!-- <label for="nom">Nom & Prénom <span class="asterisque">*</span></label> -->
+								<input id="nom" type="text" name="nom" value="" placeholder="Nom & Prénom *">
+								<!-- <label for="email">E-mail <span class="asterisque">*</span></label> -->
+								<input id="email" type="email" name="email" value="" placeholder="E-mail *">
+								<!-- <label for="telephone">Téléphone</label> -->
+								<input id="telephone" type="tel" name="telephone" value="" placeholder="Téléphone">
+								<!-- <label for="message">Message <span class="asterisque">*</span></label> -->
+								<textarea id="message" rows="4" name="message" form="contact-form" placeholder="Message *"></textarea>
+								<p><span class="asterisque">*</span><i> Ces champs sont obligatoires</i></p>
 								<input type="submit" name="contact" value="Envoyer">
 							</form>
 						</div>

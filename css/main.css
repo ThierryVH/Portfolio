@@ -279,11 +279,14 @@ li:active{
 }
 
 .nav-medium li{
-	padding: 20px 30px;
 	font-size: 22px;
 }
 
-.li-close{
+.nav-medium li a{
+	padding: 20px 30px;
+}
+
+.li-close, .asterisque{
 	color: #ed1452;
 }
 
@@ -323,26 +326,59 @@ li:active{
 	animation: arrow .7s infinite;
 }
 
-
+.contact-form form{
+	flex-direction: column;
+}
 
 .contact-form{
 	padding: 20px;
 }
 
-.contact-form form{
-	flex-direction: column;
-}
-
-.contact-form input{
+.contact-form input, .contact-form textarea{
 	border: 2px solid lightgrey;
 	border-radius: 5px;
-	height: 50px;
 	margin: 5px 0 10px;
 	padding-left: 15px;
 	font-size: 20px;
 }
 
+.contact-form input{
+	height: 50px;
+}
 
+.contact-form input::placeholder, textarea::placeholder{
+	font-style: italic;
+	color: grey;
+}
+
+.contact-form textarea{
+	padding: 15px;
+	min-height: 25px;
+}
+
+.contact-form input[type=submit]{
+	cursor: pointer;
+	background: #ed1452;
+	color: white;
+	transition: all ease .4s;
+	border: 2px solid white;
+	height: 60px;
+}
+
+h3{
+	border-bottom: 1px solid lightgrey;
+	color: #ed1452;
+	text-align: center;
+	width: 90%;
+	margin: auto;
+}
+
+h3 span{
+	position: relative;
+	background-color: white;
+	top: 15px;
+	padding: 0 15px;
+}
 
 
 
@@ -377,6 +413,27 @@ li:active{
 	.div-fleche img{
 		width: 90px;
 	}
+
+	.contact-form{
+		width: 500px;
+		margin: auto;
+	}
+
+	.contact-form form{
+		flex-direction: column;
+	}
+
+	.contact-form input, .contact-form textarea{
+		border: 2px solid lightgrey;
+		border-radius: 5px;
+		margin: 5px 0 10px;
+		padding-left: 15px;
+		font-size: 20px;
+	}
+
+	.contact-form input{
+		height: 50px;
+	}
 }
 
 
@@ -398,6 +455,21 @@ li:active{
 	nav a:hover{
 		transition: all ease .8s;
 		color: white;
+	}
+
+	h3 span{
+		position: relative;
+		background-color: white;
+		top: 27px;
+		padding: 0 45px;
+		font-size: 45px;
+	}
+
+	.contact-form input[type=submit]:hover{
+		font-size: 22px;
+		border: 2px solid #ed1452;
+		box-shadow: 0 5px 10px grey;
+		transition: all ease .4s;
 	}
 }
 

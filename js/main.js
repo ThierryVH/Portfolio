@@ -26,9 +26,9 @@ $(function(){
 		// time before typing starts
 		startDelay: 700,
 		// backspacing speed
-		backSpeed: 50,
+		backSpeed: 30,
 		// time before backspacing
-		backDelay: 1000,
+		backDelay: 1500,
 		// loop
 		loop: true,
 		// false = infinite
@@ -41,13 +41,5 @@ $(function(){
 		attr: null,
 		// either html or text
 		contentType: 'html',
-		// call when done callback function
-		callback: function() {},
-		// starting callback function before each string
-		preStringTyped: function() {},
-		//callback for every typed string
-		onStringTyped: function() {},
-		// callback for reset
-		resetCallback: function() {}
 	});
 });
