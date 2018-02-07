@@ -193,18 +193,20 @@ li:active{
 	animation: animateright .4s;
 	background-color: white;
 	margin-top: 0;
-	width: 70%;
+	width: 58%;
 	height: 100%;
 	right: 0;
-	padding-left: 0;
+	padding: 0px 25px;
 	border-left: 1px solid lightgrey;
 	/* box-shadow: 0 0 20px grey; */
 	z-index: 1;
 }
 
 .animate-right li{
-	font-size: 20px;
+	font-size: 14px;
 	font-weight: bold;
+	border-bottom: 1px solid lightgrey;
+	padding: 20px 0;
 }
 
 
@@ -260,7 +262,7 @@ li:active{
 
 .logo-medium{
 	width: 100px;
-	margin: auto;
+	margin: auto auto auto 50px;
 	/* position: absolute;
 	left: 25px;
 	top: 10px; */
@@ -281,10 +283,6 @@ li:active{
 
 .div-animate{
 	width: 100%;
-}
-
-.nav-small li{
-	padding: 20px 40px;
 }
 
 .li-close, .asterisque{
@@ -331,10 +329,6 @@ li:active{
 	flex-direction: column;
 }
 
-.contact-form{
-	padding: 40px 10%;
-}
-
 .contact-form input, .contact-form textarea{
 	border: 1px solid lightgrey;
 	border-radius: 3px;
@@ -343,8 +337,27 @@ li:active{
 	font-size: 12px;
 }
 
+textarea{
+	margin: 5px 0 0!important;
+	transition: all ease .3s;
+}
+
+.contact-content{
+	flex-direction: column;
+}
+
+.contact-form{
+	width: 85%;
+	max-width: 330px;
+	margin: 30px auto;
+}
+
 .contact-form input{
 	height: 40px;
+}
+
+.contact-form div{
+	flex-direction: column;
 }
 
 .contact-form input::placeholder, textarea::placeholder{
@@ -358,13 +371,35 @@ li:active{
 }
 
 .contact-form input[type=submit]{
-	cursor: pointer;
-	background: #FFF;
-	color: #ed1452;
-	transition: all ease .4s;
+	background: #ed1452;
+	color: #FFF;
 	border: 1px solid #ed1452;
 	height: 50px;
 	font-size: 15px;
+}
+
+.contact-info img{
+	width: 230px;
+	display: block;
+	margin: auto;
+}
+
+.contact-info p a{
+	border-radius: 3px;
+	border: 2px solid #ed1452;
+	padding: 7px 15px;
+	margin: 20px 0;
+	color: #525252;
+}
+
+.contact-info p{
+	text-align: center;
+	margin: 25px 0;
+}
+
+.contact-info .social-link .fa-2x{
+	font-size: 30px;
+	color: #ed1452;
 }
 
 h3{
@@ -372,7 +407,7 @@ h3{
 	color: #ed1452;
 	text-align: center;
 	width: 90%;
-	margin: auto;
+	margin: 0 auto 30px;
 }
 
 h3 span{
@@ -380,7 +415,7 @@ h3 span{
 	background-color: white;
 	top: 12px;
 	padding: 0 15px;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 footer{
@@ -389,6 +424,7 @@ footer{
 	color: grey;
 	position: relative;
 	padding-top: 60px;
+	padding-bottom: 20px;
 }
 
 footer p{
@@ -427,6 +463,11 @@ footer p{
 
 
 @media (min-width: 768px) {
+
+	main, input, textarea {
+    font-size: 15px;
+	}
+
 	.nav-medium li{
 		font-size: 18px;
 	}
@@ -459,34 +500,45 @@ footer p{
 	h3 span{
 		position: relative;
 		background-color: white;
-		top: 25px;
+		top: 19px;
 		padding: 0 15px;
-		font-size: 35px;
+		font-size: 30px;
 	}
 
 	.div-fleche img{
 		width: 90px;
 	}
 
+	.contact-content{
+		margin: 50px auto;
+	}
+
 	.contact-form{
 		width: 500px;
-		margin: auto;
+		max-width: 500px;
+		margin: 30px auto;
 	}
 
-	.contact-form form{
-		flex-direction: column;
-	}
-
-	.contact-form input, .contact-form textarea{
+	.contact-form input{
 		border: 2px solid lightgrey;
 		border-radius: 3px;
 		margin: 5px 0 10px;
-		padding-left: 15px;
-		font-size: 16px;
+		padding: 0 10px;
+		font-size: 15px;
+		transition: all ease .3s;
+	}
+
+	.contact-form textarea{
+		font-size: 15px;
+		border: 2px solid lightgrey
 	}
 
 	.contact-form input{
 		height: 50px;
+	}
+
+	.contact-content .social-link .fa-2x{
+		font-size: 35px;
 	}
 
 	.social-link .fa-2x:hover{
@@ -525,21 +577,89 @@ footer p{
 		color: white;
 	}
 
+	section{
+		width: 85%;
+		margin: auto;
+	}
+
 	h3 span{
-		position: relative;
-		background-color: white;
-		top: 19px;
 		padding: 0 35px;
-		font-size: 30px;
+	}
+
+	.contact-content{
+		flex-direction: row;
+		max-width: 1050px;
+	}
+
+	.contact-form input:focus{
+		box-shadow: 0 0 10px lightgrey;
+		border: 2px solid white;
+		transition: all ease .3s;
+	}
+
+	textarea:focus{
+		box-shadow: 0 0 10px lightgrey;
+		border: 2px solid white;
+		transition: all ease .3s;
+	}
+
+	.contact-form input[type=submit]{
+		cursor: pointer;
+		background: #FFF;
+		color: #ed1452;
+		border: 2px solid #ed1452;
+		transition: all ease .4s;
+		font-weight: bold;
+		width: 120px;
+		margin-top: 15px;
 	}
 
 	.contact-form input[type=submit]:hover{
-		border: 3px solid #ed1452;
+		border: 2px solid #ed1452;
 		background-color: #ed1452;
 		color: #FFF;
 		box-shadow: 0 0 10px grey;
 		transition: all ease .4s;
 	}
+
+	.contact-info{
+		width: 45%;
+		/* border: 1px solid red; */
+		margin-top: 30px;
+	}
+
+	.contact-info p{
+		text-align: center;
+		border-radius: 3px;
+	}
+
+	.contact-info p a{
+		border-radius: 3px;
+		border: 2px solid #ed1452;
+		padding: 7px 15px;
+	}
+
+	.contact-form{
+		width: 800px;
+max-width: 800px;
+		/* background: grey; */
+	}
+
+	.contact-form div{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.contact-form form{
+		width: 90%;
+		margin: auto;
+	}
+
+	.contact-form input.input{
+		width: 28%;
+		display: inline-block;
+	}
+
 }
 
 

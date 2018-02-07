@@ -52,9 +52,9 @@
 									<div class="mySidebar div-close" onclick="closeNav()"></div>
 									<ul class="animate-right mySidebar">
 									  <li onclick="closeNav()" class="li-close">Fermer <span>&times;</span></li>
-									  <li class="mySidenar"><a href="#">Mes réalisations</a></li>
+									  <li class="mySidenar"><a href="#">Portfolio</a></li>
 									  <li class="mySidenar"><a href="#">À propos</a></li>
-									  <li class="mySidenar"><a href="#">Contactez-moi</a></li>
+									  <li class="mySidenar"><a href="#">Contact</a></li>
 									</ul>
 								</div>
 
@@ -81,7 +81,7 @@
 						<h2><span id="typed"></span><span class="typed-cursor" style="animation-iteration-count: infinite;">|</span></h2>
 
 
-						<div class="div-fleche">
+						<div class="div-fleche hide-small">
 							<a href="#portfolio">
 								<img src="img/fleche-bas.png" alt="">
 							</a>
@@ -102,30 +102,50 @@
 					<section>
 						<h3><span>Laisse-moi un message</span></h3>
 
-						<div class="contact-form">
-							<form class="flex" action="index.html" method="post" id="contact-form">
-								<div>
-									<input id="nom" type="text" name="nom" value="" placeholder="Nom & Prénom *">
-									<input id="email" type="email" name="email" value="" placeholder="E-mail *">
-									<input id="telephone" type="tel" name="telephone" value="" placeholder="Téléphone">
+						<div class="contact-content flex">
+							<div class="contact-info">
+								<img src="img/pic-me.png" alt="">
+								<p><a href="">Consulter / Télécharger mon CV</a></p>
+								<div class="social-link">
+									<a href=""><i class="fab fa-github-square fa-2x"></i></a>
+									<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+									<a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
 								</div>
-								<textarea id="message" rows="4" name="message" form="contact-form" placeholder="Message *"></textarea>
-								<p><span class="asterisque">*</span><i> Ces champs sont obligatoires</i></p>
-								<input type="submit" name="contact" value="Envoyer">
-							</form>
+							</div>
+
+							<div class="contact-form">
+								<form class="flex" action="index.html" method="post" id="contact-form">
+									<div class="flex">
+
+										<input class="input" id="nom" type="text" name="nom" value="" placeholder="Nom / Prénom *">
+										<input class="input" id="email" type="email" name="email" value="" placeholder="E-mail *">
+										<input class="input" id="telephone" type="tel" name="telephone" value="" placeholder="Téléphone">
+									</div>
+
+									<textarea id="message" rows="4" name="message" form="contact-form" placeholder="Message *"></textarea>
+									<div class="flex">
+										<p class="margin-right"><span class="asterisque">*</span><i> Ces champs sont obligatoires</i></p>
+										<input type="submit" name="contact" value="Envoyer">
+									</div>
+
+								</form>
+							</div>
 						</div>
+
+
+
 					</section>
 
 					<footer>
 				        <p>
-				          Designed & Handmade by Me !
+				          Designed & Handmade by Me
 								</p>
 
 
 						<div class="social-link">
-							<a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
 							<a href=""><i class="fab fa-github-square fa-2x"></i></a>
 							<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+							<a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
 						</div>
 
 					</footer>
