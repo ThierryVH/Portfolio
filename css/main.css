@@ -101,8 +101,11 @@ textarea {
 
 /* #ed1452 */
 
-main{
-	font-family: 'Source Sans Pro', sans-serif;
+main,
+input,
+textarea{
+	font-family: 'Source Sans Pro', sans-serif ;
+	font-size: 12px;
 }
 
 header{
@@ -113,11 +116,14 @@ header{
 	position: relative;
 }
 
+h1, h2, h3{
+	font-family: 'Poiret One', cursive;
+}
+
 h1, h2{
 	color: white;
 	font-size: 24px;
 	text-align: center;
-	font-family: 'Poiret One', cursive;
 	margin: 0;
 }
 
@@ -228,8 +234,8 @@ li:active{
 }
 
 .logo-small{
-	width: 70px;
-	min-width: 70px;
+	width: 60px;
+	min-width: 60px;
 	position: absolute;
 	left: 15px;
 	top: 10px;
@@ -248,27 +254,28 @@ li:active{
 	margin-right: 50px;
 }
 
-.nav-medium a{
+.nav-medium ul a{
 	margin: auto;
 }
 
 .logo-medium{
 	width: 100px;
-	position: absolute;
+	margin: auto;
+	/* position: absolute;
 	left: 25px;
-	top: 10px;
+	top: 10px; */
 
 }
 
 .button-open{
 	color: grey;
-	font-size: 50px;
+	font-size: 40px;
 	width: 80px;
 	border: none;
 	background-color: transparent;
 	position: absolute;
 	right: 10px;
-	top: 10px;
+	top: 15px;
 }
 
 
@@ -325,15 +332,15 @@ li:active{
 }
 
 .contact-form{
-	padding: 10%;
+	padding: 40px 10%;
 }
 
 .contact-form input, .contact-form textarea{
-	border: 2px solid lightgrey;
-	border-radius: 5px;
+	border: 1px solid lightgrey;
+	border-radius: 3px;
 	margin: 5px 0 10px;
-	padding-left: 15px;
-	font-size: 16px;
+	padding-left: 10px;
+	font-size: 12px;
 }
 
 .contact-form input{
@@ -346,17 +353,18 @@ li:active{
 }
 
 .contact-form textarea{
-	padding: 15px;
-	min-height: 25px;
+	padding: 15px 0 15px 10px;
+	min-height: 20px;
 }
 
 .contact-form input[type=submit]{
 	cursor: pointer;
-	background: #ed1452;
-	color: white;
+	background: #FFF;
+	color: #ed1452;
 	transition: all ease .4s;
-	border: 2px solid white;
-	height: 60px;
+	border: 1px solid #ed1452;
+	height: 50px;
+	font-size: 15px;
 }
 
 h3{
@@ -370,13 +378,41 @@ h3{
 h3 span{
 	position: relative;
 	background-color: white;
-	top: 15px;
+	top: 12px;
 	padding: 0 15px;
+	font-size: 16px;
 }
 
+footer{
+	height: 100px;
+	background-image: url('../img/fond3.png');
+	color: grey;
+	position: relative;
+	padding-top: 60px;
+}
 
+footer p{
+	width: 100%;
+	text-align: center;
+}
 
+.social-link .fa-2x{
+	color: grey;
+	margin: 0 5px!important;
+	transition: color ease .3s;
+}
 
+.social-link{
+	/* border: 1px solid white; */
+	text-align: center;
+}
+
+.hearth{
+	color: #ed1452;
+	position: relative;
+	top: 14px;
+	margin: 0 5px;
+}
 
 
 
@@ -392,11 +428,15 @@ h3 span{
 
 @media (min-width: 768px) {
 	.nav-medium li{
-		font-size: 22px;
+		font-size: 18px;
 	}
 
 	.nav-medium li a{
 		padding: 20px 30px;
+	}
+
+	.nav-medium li:active{
+		background: transparent;
 	}
 
 	.hide-medium{
@@ -416,6 +456,14 @@ h3 span{
 		font-size: 40px;
 	}
 
+	h3 span{
+		position: relative;
+		background-color: white;
+		top: 25px;
+		padding: 0 15px;
+		font-size: 35px;
+	}
+
 	.div-fleche img{
 		width: 90px;
 	}
@@ -431,7 +479,7 @@ h3 span{
 
 	.contact-form input, .contact-form textarea{
 		border: 2px solid lightgrey;
-		border-radius: 5px;
+		border-radius: 3px;
 		margin: 5px 0 10px;
 		padding-left: 15px;
 		font-size: 16px;
@@ -439,6 +487,11 @@ h3 span{
 
 	.contact-form input{
 		height: 50px;
+	}
+
+	.social-link .fa-2x:hover{
+		color: white;
+		transition: color ease .3s;
 	}
 }
 
@@ -462,6 +515,11 @@ h3 span{
 		width: 100px;
 	}
 
+	.main-nav{
+		max-width: 1200px;
+		margin: auto;
+	}
+
 	nav a:hover{
 		transition: all ease .8s;
 		color: white;
@@ -470,15 +528,16 @@ h3 span{
 	h3 span{
 		position: relative;
 		background-color: white;
-		top: 27px;
-		padding: 0 45px;
-		font-size: 45px;
+		top: 19px;
+		padding: 0 35px;
+		font-size: 30px;
 	}
 
 	.contact-form input[type=submit]:hover{
-		font-size: 22px;
-		border: 2px solid #ed1452;
-		box-shadow: 0 5px 10px grey;
+		border: 3px solid #ed1452;
+		background-color: #ed1452;
+		color: #FFF;
+		box-shadow: 0 0 10px grey;
 		transition: all ease .4s;
 	}
 }

@@ -22,6 +22,7 @@
 				<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+				<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 				<script src="js/typed.js"></script>
 					<script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
@@ -61,7 +62,7 @@
 
 							<div class="nav-medium hide-small flex">
 
-								<a class="margin-right" href="">
+								<a class="margin-right flex" href="">
 									<img src="img/logo-gris.png" alt="" class="logo-medium ">
 								</a>
 
@@ -93,27 +94,41 @@
 					</section>
 
 					<section>
-						<h3><span>Parlons un peu de moi</span></h3>
+						<h3>
+							<span>Viens on parle de moi !</span>
+						</h3>
 					</section>
 
 					<section>
-						<h3><span>Contactez-moi</span></h3>
+						<h3><span>Laisse-moi un message</span></h3>
 
 						<div class="contact-form">
 							<form class="flex" action="index.html" method="post" id="contact-form">
-								<!-- <label for="nom">Nom & Prénom <span class="asterisque">*</span></label> -->
-								<input id="nom" type="text" name="nom" value="" placeholder="Nom & Prénom *">
-								<!-- <label for="email">E-mail <span class="asterisque">*</span></label> -->
-								<input id="email" type="email" name="email" value="" placeholder="E-mail *">
-								<!-- <label for="telephone">Téléphone</label> -->
-								<input id="telephone" type="tel" name="telephone" value="" placeholder="Téléphone">
-								<!-- <label for="message">Message <span class="asterisque">*</span></label> -->
+								<div>
+									<input id="nom" type="text" name="nom" value="" placeholder="Nom & Prénom *">
+									<input id="email" type="email" name="email" value="" placeholder="E-mail *">
+									<input id="telephone" type="tel" name="telephone" value="" placeholder="Téléphone">
+								</div>
 								<textarea id="message" rows="4" name="message" form="contact-form" placeholder="Message *"></textarea>
 								<p><span class="asterisque">*</span><i> Ces champs sont obligatoires</i></p>
 								<input type="submit" name="contact" value="Envoyer">
 							</form>
 						</div>
 					</section>
+
+					<footer>
+				        <p>
+				          Designed & Handmade by Me !
+								</p>
+
+
+						<div class="social-link">
+							<a href=""><i class="fab fa-twitter-square fa-2x"></i></a>
+							<a href=""><i class="fab fa-github-square fa-2x"></i></a>
+							<a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+						</div>
+
+					</footer>
 
 				</main>
 
