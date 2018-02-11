@@ -1,11 +1,15 @@
 function openNav() {
-  document.getElementsByClassName("mySidebar")[0].style.display = "block";
-  document.getElementsByClassName("mySidebar")[1].style.display = "block";
+	var mySideBar = document.getElementsByClassName("mySidebar");
+	for(i=0; i<mySideBar.length; i++){
+		document.getElementsByClassName("mySidebar")[i].style.display = "block";
+	}
 	document.getElementById('button').style.display = "none";
 }
 function closeNav() {
-  document.getElementsByClassName("mySidebar")[0].style.display = "none";
-  document.getElementsByClassName("mySidebar")[1].style.display = "none";
+	var mySideBar = document.getElementsByClassName("mySidebar");
+	for(i=0; i<mySideBar.length; i++){
+		document.getElementsByClassName("mySidebar")[i].style.display = "none";
+	}
 	document.getElementById('button').style.display = "block";
 
 }

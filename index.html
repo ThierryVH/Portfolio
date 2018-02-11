@@ -52,9 +52,9 @@
 									<div class="mySidebar div-close" onclick="closeNav()"></div>
 									<ul class="animate-right mySidebar">
 									  <li onclick="closeNav()" class="li-close">Fermer <span>&times;</span></li>
-									  <li class="mySidenar"><a href="#">Portfolio</a></li>
-									  <li class="mySidenar"><a href="#">À propos</a></li>
-									  <li class="mySidenar"><a href="#">Contact</a></li>
+									  <li onclick="closeNav()" class="mySidebar"><a href="#portfolio">Portfolio</a></li>
+									  <li onclick="closeNav()" class="mySidebar"><a href="#aboutme">À propos</a></li>
+									  <li onclick="closeNav()" class="mySidebar"><a href="#contact">Contact</a></li>
 									</ul>
 								</div>
 
@@ -67,9 +67,9 @@
 								</a>
 
 								<ul class="flex">
-									<li class="flex"><a href="#">Portfolio</a></li>
-									<li class="flex"><a href="#">À propos</a></li>
-									<li class="flex"><a href="#">Contact</a></li>
+									<li class="flex"><a href="#portfolio">Portfolio</a></li>
+									<li class="flex"><a href="#aboutme">À propos</a></li>
+									<li class="flex"><a href="#contact">Contact</a></li>
 								</ul>
 
 							</div>
@@ -192,13 +192,35 @@
 					</section>
 
 					<section>
-						<h3>
+						<h3 id="aboutme">
 							<span>Viens on parle de moi !</span>
 						</h3>
+
+
+						<div class="about-me">
+
+							<div class="en-bref flex hide-medium">
+								<img src="img/en-bref-mobile.png" alt="" class="hide-medium">
+							</div>
+
+							<div class="about-me-description flex">
+								<p>
+									Du Sport au Développement Web, j'ai opéré un virage à 180 degrés en intégrant la formation Développeur Web <span>|</span> Ruby on Rails, à SIMPLON Roubaix.
+									Depuis, le développement ne me quitte plus, et <strong>PHP</strong> & <strong>Laravel</strong> ont remplacé Ruby & RoR.<br><br>
+									Le goût du <strong>challenge</strong> et du <strong>dépassement de soi</strong> me poussent à me lancer sans cesse de nouveaux défis.<br><br>
+									Alors si tu as besoin d'un Développeur Back-End, avec des affinités pour le Front, <a href="#contact">envoie moi un petit message</a>.
+								</p>
+							</div>
+
+							<div class="en-bref flex hide-small">
+								<img src="img/en-bref.png" alt="" class="hide-small">
+							</div>
+						</div>
+
 					</section>
 
 					<section>
-						<h3><span>Laisse-moi un message</span></h3>
+						<h3 id="contact"><span>Laisse-moi un message</span></h3>
 
 						<div class="contact-content flex">
 							<div class="contact-info">
@@ -215,12 +237,12 @@
 								<form class="flex" action="index.html" method="post" id="contact-form">
 									<div class="flex">
 
-										<input class="input" id="nom" type="text" name="nom" value="" placeholder="Nom / Prénom *">
-										<input class="input" id="email" type="email" name="email" value="" placeholder="E-mail *">
+										<input class="input" id="nom" type="text" name="nom" value="" placeholder="Nom / Prénom *" required>
+										<input class="input" id="email" type="email" name="email" value="" placeholder="E-mail *" required>
 										<input class="input" id="telephone" type="tel" name="telephone" value="" placeholder="Téléphone">
 									</div>
 
-									<textarea id="message" rows="4" name="message" form="contact-form" placeholder="Message *"></textarea>
+									<textarea id="message" rows="4" name="message" form="contact-form" placeholder="Message *" required></textarea>
 									<div class="flex">
 										<p class="margin-right"><span class="asterisque">*</span><i> Ces champs sont obligatoires</i></p>
 										<input type="submit" name="contact" value="Envoyer">
