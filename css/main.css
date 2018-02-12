@@ -156,6 +156,10 @@ a{
 	text-decoration: none;
 }
 
+a:focus{
+	outline: none;
+}
+
 li:active{
 	background: lightgrey;
 }
@@ -886,7 +890,7 @@ footer p{
 /**********************    LARGE  DESKTOP    **************************/
 /**********************************************************************/
 
-@media (min-width: 1366px) {
+@media (min-width: 1367px) {
 
 	main, input, textarea {
     font-size: 15px;
