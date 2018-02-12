@@ -110,7 +110,7 @@ textarea{
 
 header{
 	height: 100vh;
-	background-image: url('../img/fond3.png');
+	background-image: url('../img/fond-header-small.png');
 	background-size: cover;
 	min-height: 450px;
 	position: relative;
@@ -132,9 +132,8 @@ h1{
 	font-size: 35px;
 }
 
-nav a{
+.nav-small a{
 	color: #808080;
-	transition: all ease .8s;
 	padding: 20px 70% 20px 0;
 }
 
@@ -298,15 +297,15 @@ li:active{
 	left: 10px;
 }
 
-@keyframes arrow {
+@keyframes arrowDown {
 	0% {
-    bottom: 0;
+    top: 0;
   }
   50% {
-    bottom: 15px;
+    top: 15px;
   }
   100% {
-    bottom: 0;
+    top: 0;
   }
 }
 
@@ -324,7 +323,7 @@ li:active{
 
 .div-fleche img:hover{
 	position: relative;
-	animation: arrow .7s infinite;
+	animation: arrowDown .7s infinite;
 }
 
 h3{
@@ -397,11 +396,13 @@ hr:last-child{
 
 .en-bref img{
 	width: 90%;
+	max-width: 370px;
 	margin: auto;
 }
 
 .about-me-description p {
 	width: 90%;
+	max-width: 370px;
 	margin: 30px auto;
 	text-align: center;
 }
@@ -496,7 +497,8 @@ textarea{
 
 footer{
 	height: 100px;
-	background-image: url('../img/fond3.png');
+	background-image: url('../img/fond-footer-small.png');
+	background-size: cover;
 	color: grey;
 	position: relative;
 	padding-top: 60px;
@@ -526,6 +528,35 @@ footer p{
 	margin: 0 5px;
 }
 
+.scroll-to-top{
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	display: none;
+	z-index: 1;
+}
+
+@keyframes arrowTop {
+	0% {
+    bottom: 30px;
+  }
+  50% {
+    bottom: 45px;
+  }
+  100% {
+    bottom: 30px;
+  }
+}
+
+.scroll-to-top img{
+	width: 60px;
+	position: relative;
+}
+
+.scroll-to-top:hover{
+	animation: arrowTop .7s infinite;
+}
+
 
 
 
@@ -540,6 +571,10 @@ footer p{
 
 @media (min-width: 768px) {
 
+	header{
+		background-image: url('../img/fond-header-medium.png');
+	}
+
 	main, input, textarea {
     font-size: 15px;
 	}
@@ -550,6 +585,8 @@ footer p{
 
 	.nav-medium li a{
 		padding: 20px 30px;
+		color: #808080;
+		transition: all ease .3s;
 	}
 
 	.nav-medium li:active{
@@ -604,6 +641,17 @@ footer p{
 		max-width: 530px;
 	}
 
+	.en-bref img {
+    width: 480px;
+    margin: auto;
+		max-width: 480px;
+	}
+
+	.about-me-description p {
+    width: 540px;
+		max-width: 540px;
+	}
+
 	.div-fleche img{
 		width: 90px;
 	}
@@ -648,12 +696,17 @@ footer p{
 	.contact-info .social-link .fa-2x:hover{
 		color: #ed1452;
 	}
+
+	footer{
+		background-image: url('../img/fond-footer-medium.png');
+	}
 }
 
 
 @media (min-width: 992px) {
 
 	header{
+		background-image: url('../img/fond-header-large.png');
 		min-height: 650px;
 	}
 
@@ -695,7 +748,7 @@ footer p{
 
 	.portfolio-content{
 		width: 900px;
-		margin: 120px auto;
+		margin: 100px auto;
 		/* border: 1px solid black; */
 		flex-direction: row;
 	}
@@ -740,15 +793,11 @@ footer p{
 		width: 460px;
 		margin: auto;
 		font-size: 18px;
+		text-align: left;
 	}
 
 	.en-bref{
 		width: 50%;
-	}
-
-	.en-bref img{
-		width: 80%;
-		margin: auto;
 	}
 
 	.contact-content{
@@ -823,6 +872,10 @@ max-width: 800px;
 	.contact-form input.input{
 		width: 28%;
 		display: inline-block;
+	}
+
+	footer{
+		background-image: url('../img/fond-footer-large.png');
 	}
 
 }
