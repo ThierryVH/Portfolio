@@ -1,3 +1,4 @@
+// Function to open navigation and hide button
 function openNav() {
 	var mySideBar = document.getElementsByClassName("mySidebar");
 	for(i=0; i<mySideBar.length; i++){
@@ -5,20 +6,19 @@ function openNav() {
 	}
 	document.getElementById('button').style.display = "none";
 }
+
+// Function to close navigation and show button
 function closeNav() {
 	var mySideBar = document.getElementsByClassName("mySidebar");
 	for(i=0; i<mySideBar.length; i++){
 		document.getElementsByClassName("mySidebar")[i].style.display = "none";
 	}
 	document.getElementById('button').style.display = "block";
-
 }
 
 
-// var typed = new Typed('#typed', {
-//   strings: ["First sentence.", "Second sentence."],
-//   typeSpeed: 100
-// });
+// Function Typed.js by Matt Boldt
+// https://mattboldt.com/demos/typed-js/
 
 $(function(){
 	$("#typed").typed({
@@ -52,8 +52,8 @@ $(function(){
 
 
 
-
-
+// jQuery Function
+// https://startbootstrap.com/template-overviews/freelancer/
 
 (function($) {
   "use strict"; // Start of use strict
