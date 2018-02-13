@@ -152,7 +152,7 @@ h1{
 
 .nav-small a{
 	color: #808080;
-	padding: 20px 70% 20px 0;
+	padding: 20px 65% 20px 0;
 }
 
 li{
@@ -468,7 +468,7 @@ textarea{
 
 .contact-form input::placeholder, textarea::placeholder{
 	font-style: italic;
-	color: grey;
+	color: #525252;
 }
 
 .contact-form textarea{
